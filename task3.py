@@ -1,40 +1,35 @@
-//Merge 2 dictionaries
-dict1 = {'adithi': 80, 'Tanu': 90}
-dict2 = {'Disha': 100, 'Namrata': 110}
-dict = dict1.copy()
-dict.update(dict2)
+dic1 = {'A': 100, 'B': 200}
+dic2 = {'D': 300, 'C': 200}
+dic = dic1.copy()
+dic.update(dic2)
+print(dic)
+
+dict={'a':20,'b':40,'c':60,'d':80}
+del dict['d']
 print(dict)
 
-//remove a key from dictionary
-dict = {'a':2,'b':4,'c':6,'d':8}
-print(dict)
-if 'a' in dict: 
-    del dict['a']
-print(dict)
+keys=['color:1','color:2','color:3','color:4']
+colors=['red','blue','green','pink']
+res = {}
+for key in keys:
+   for value in colors:
+      res[key] = value
+      colors.remove(value)
+      break
+print("Dictionary from lists :\n ",res)
 
-//map 2 lists into a dictionary
-list1 = ['Adithi', 'Tanu', 'Disha']
-list2 = ['Mysore','Bangalore', 'Mumbai']
-dictionary = dict(zip(list1, list2))
-print(dictionary)
+seta=set([12,1,0,13,14,15,1,61,70,500,1000])
+print(len(seta))
 
-//length of a set 
-sets = set([5, 10, 15, 20, 25 , 30 , 35])
-print(len(sets))
-
-//remove the intersection of a 2nd set from the 1st set
-set1 = {1,2,3,4,5}
-set2 = {4,5,6,7,8}
-print("Original sets are:")
-print(set1)
-print(set2)
-print("Remove the intersection of a 2nd set from the 1st set")
-set1.difference_update(set2)
-print(set2)
-set1 = {1,2,3,4,5}
-set2 = {4,5,6,7,8}
-print("Remove the intersection of a 2nd set from the 1st set")
-print(set1-set2)
-
-
-
+s1={2,4,6,8,10,12}
+s2={3,6,9,12,15,18}
+print("original sets:");
+print(s1);
+print(s2);
+print("remove the intersection of a 2nd set from the 1st set using difference_update():");
+se1.difference_update(s2)
+print(s1);
+set1={1,4,9,16,25,36}
+set2={3,6,9,12,15,18}
+print("Remove the intersection of a 2nd set from the 1st set using -= operator:");
+print(set1-set2);
