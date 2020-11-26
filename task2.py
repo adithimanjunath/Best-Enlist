@@ -1,10 +1,13 @@
 a=b=c=20
-print("divide a/10-{a/10}\t Multiply b by 50-{b+50}\t Add 50 to c -{c+50})
+print(a/10)
+print(b*50)
+print(c+60)
 
 string="goodmorning"
-print(string[:2]+ "a"+ string[3:])
+string = string.replace('d' , 'G')
+print(string)
 
 m=10
 n= 6.7
-print({int(n)} , {float(n)}")
-print({int(m)} , {float(n)}")
+print(float(b))
+print(int(n))
